@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	>
+		<TextView
+			android:text="Period: "
+			android:layout_width="wrap_content"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:hint="hellooooo"
+			android:layout_weight="4"
+			android:id="@+id/period" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+	>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Counter: " />
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:hint="5"
+			android:numeric="integer"
+			android:layout_weight="4"
+			android:id="@+id/counter" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:orientation="horizontal"
+		android:layout_gravity="bottom"
+	>
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Start"
+			android:layout_weight="1"
+			android:id="@+id/startBtn" />
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Cancel"
+			android:id="@+id/cnclBtn" />
+	</LinearLayout>
+</LinearLayout>

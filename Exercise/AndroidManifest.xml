@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.egamal.exercise"
+	android:versionCode="1"
+	android:versionName="1.0"
+>
+	<uses-sdk
+		android:minSdkVersion="8" />
+
+	<application
+		android:icon="@drawable/icon"
+		android:label="@string/app_name"
+	>
+		<activity
+			android:name=".splash"
+			android:label="@string/app_name"
+		>
+			<intent-filter>
+				<action
+					android:name="android.intent.action.MAIN" />
+				<category
+					android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".register"
+			android:label="@string/app_name"
+		>
+		</activity>
+		<activity
+			android:name=".view_user_data"
+			android:label="@string/app_name"
+		>
+		</activity>
+		<activity
+			android:name=".exercise"
+			android:label="@string/app_name"
+		>
+		</activity>
+		<service android:name=".BeebService" />
+		<receiver
+			android:name=".BCBeeb"
+		>
+			<intent-filter>
+				<action
+					android:name="com.egamal.exercise.BCBeeb" />
+			</intent-filter>
+		</receiver>
+	</application>
+</manifest>
